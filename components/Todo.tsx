@@ -10,7 +10,7 @@ const Todo = ({ todo }) => {
     <>
       <h3
         onClick={() => startTransition(() => updateTodo(todo.id))}
-        className={`cursor-pointer ${todo.complete ? 'line-through' : ''} `}
+        className={`cursor-pointer ${todo.completed ? 'line-through' : ''} `}
       >
         {todo?.content}
       </h3>
